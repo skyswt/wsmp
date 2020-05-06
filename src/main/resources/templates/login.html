@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录 - wsmp</title>
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+        }
+        body {
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+            background: url("img/login_bg.jpg") 0 0 no-repeat;
+        }
+        .main_wrapper {
+        }
+        .main {
+            width: 440px;
+            height: auto;
+            background: rgba(22,30,46, 0.5);
+            border-radius: 2px;
+            margin: 160px auto 0 auto;
+            box-shadow: 0 0 1px #000;
+            position: relative;
+            padding: 30px 0;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 400;
+            position: relative;
+            text-align: center;
+        }
+        .login_form_wrapper {
+            margin: 36px 70px 50px 70px;
+            box-sizing: border-box;
+        }
+        .form_item {
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            margin-bottom: 7px;
+        }
+        .form_item:last-child {
+            border-bottom: none;
+        }
+        .form_item .input_wrapper {
+            display: table;
+            width: 100%;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            text-align: start;
+        }
+        .input_wrapper span {
+            vertical-align: middle;
+            display: table-cell;
+            padding-right: 7px;
+        }
+        .input_wrapper input {
+            display: table-cell;
+            background: transparent;
+            color: #fff;
+            width: 100%;
+            float: left;
+            height: 40px;
+            line-height: 20px;
+        }
+        input:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+        input::-webkit-input-placeholder{
+            color: #D2D2D2;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color: #D2D2D2;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color: #D2D2D2;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+            color: #D2D2D2;
+        }
+        .form_item button {
+            width: 100%;
+            margin-top: 21px;
+            background: transparent;
+            border-radius: 2px;
+            padding-left: 46px;
+            padding-right: 46px;
+            font-size: 17px;
+            height: 42px;
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, .12);
+            border: 1px solid #fff;
+        }
+        .form_item button span {
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .other {
+            margin-top: 7px;
+        }
+        .other .register {
+            float: right;
+        }
+        .other span:hover {
+            cursor: pointer;
+        }
+        .form_item button:hover {
+            cursor: pointer;
+            background: #1ABC9C;
+            border: none;
+        }
+        button:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="main_wrapper">
+        <div class="main">
+            <div class="title">账号登录</div>
+            <div class="login_form_wrapper">
+                <form action="/index" class="login_form" method="post">
+                    <div class="form_item">
+                    <span class="input_wrapper">
+                        <span>账号</span>
+                        <input type="text" placeholder="请输入账号" name="username" autocomplete="off"/>
+                    </span>
+                    </div>
+                    <div class="form_item">
+                    <span class="input_wrapper">
+                        <span>密码</span>
+                        <input type="password" placeholder="请输入密码" name="password" autocomplete="off"/>
+                    </span>
+                    </div>
+                    <div class="form_item">
+                        <button type="submit">
+                            <span>登录</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="other">
+                    <span>忘记密码？</span>
+                    <span class="register">注册</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
