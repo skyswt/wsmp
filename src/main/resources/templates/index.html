@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="public/css/all-skins.min.css">
     <link rel="stylesheet" href="public/css/main.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,20 +17,14 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
 <body class="hold-transition skin-blue sidebar-mini">
-<!-- Site wrapper -->
 <div class="wrapper" id="dtapp" v-cloak>
     <header class="main-header">
         <a href="javascript:void(0);" class="logo">
-            <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>伴我汽车</b></span>
-            <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>伴我汽车管理平台</b></span>
+            <span class="logo-mini"><b>Web服务</b></span>
+            <span class="logo-lg"><b>Web服务监控平台</b></span>
         </a>
-        <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
-            <!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
@@ -46,14 +38,8 @@
         </nav>
     </header>
 
-    <!-- =============================================== -->
-
-    <!-- Left side column. contains the sidebar -->
     <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <!-- /.search form -->
-            <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">导航菜单</li>
                 <!-- vue生成的菜单 -->
@@ -61,57 +47,65 @@
                 <!--<li class="treeview">
                     <a href="#">
                         <i class="fa fa-clock-o"></i>
-                        <span>定时任务</span>
+                        <span>监控服务</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
                     </a>
-                    <ul class="treeview-menu">
+                    &lt;!&ndash;<ul class="treeview-menu">
                         <li><a href="#sys/job.html"><i class="fa fa-circle-o"></i> 任务管理</a></li>
                         <li><a href="#sys/schedule_log.html"><i class="fa fa-circle-o"></i> 任务日志</a></li>
-                    </ul>
+                    </ul>&ndash;&gt;
                 </li>
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-binoculars"></i>
-                        <span>系统监控</span>
+                        <span>实例管理</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#druid/sql.html"><i class="fa fa-circle-o"></i> SQL监控</a></li>
-                        <li><a href="#sys/log.html"><i class="fa fa-circle-o"></i> 系统日志</a></li>
+                        <li><a href="#druid/sql.html"><i class="fa fa-circle-o"></i>创建实例</a></li>
+                        <li><a href="#sys/log.html"><i class="fa fa-circle-o"></i>实例列表</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-gg-circle"></i>
+                        <span>日志管理</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#sys/user.html"><i class="fa fa-circle-o"></i>监控日志</a></li>
+                        <li><a href="#sys/role.html"><i class="fa fa-circle-o"></i>警告日志</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">
                         <i class="fa fa-cog"></i>
-                        <span>系统管理</span>
+                        <span>个人中心</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#sys/user.html"><i class="fa fa-circle-o"></i> 用户管理</a></li>
-                        <li><a href="#sys/role.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
-                        <li><a href="#sys/menu.html"><i class="fa fa-circle-o"></i> 菜单管理</a></li>
-                        <li><a href="#sys/config.html"><i class="fa fa-circle-o"></i> 参数管理</a></li>
+                        <li><a href="#sys/user.html"><i class="fa fa-circle-o"></i>查看资料</a></li>
+                        <li><a href="#sys/role.html"><i class="fa fa-circle-o"></i>系统设置</a></li>
                     </ul>
                 </li>-->
-
             </ul>
         </section>
-        <!-- /.sidebar -->
     </aside>
-    <!-- =============================================== -->
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <ol class="breadcrumb" id="nav_title" style="position:static;float:none;">
-                <li class="active"><i class="fa fa-home"
-                                      style="font-size:20px;position:relative;top:2px;left:-3px;"></i> &nbsp; 首页
+                <li class="active">
+                    <i class="fa fa-home"
+                       style="font-size:20px;position:relative;top:2px;left:-3px;"></i> &nbsp; 首页
                 </li>
                 <li class="active">{{navTitle}}</li>
             </ol>
@@ -119,8 +113,11 @@
 
         <!-- Main content -->
         <section class="content" style="background:#fff;">
-            <iframe scrolling="yes" frameborder="0"
-                    style="width:100%;min-height:200px;overflow:visible;background:#fff;" :src="main"></iframe>
+            <iframe scrolling="yes"
+                    frameborder="0"
+                    style="width:100%;min-height:200px;overflow:visible;background:#fff;"
+                    :src="main">
+            </iframe>
         </section>
         <!-- /.content -->
     </div>
@@ -155,8 +152,6 @@
     </div>
 
 </div>
-<!-- ./wrapper -->
-
 
 <script src="public/libs/jquery.min.js"></script>
 <script src="public/libs/vue.min.js"></script>
